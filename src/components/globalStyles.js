@@ -10,6 +10,10 @@ const GlobalStyle = createGlobalStyle`
             list-style: none;
             cursor: pointer;
         }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 `;
  
 export default GlobalStyle;
