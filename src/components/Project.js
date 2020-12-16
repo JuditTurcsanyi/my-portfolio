@@ -6,7 +6,7 @@ const Project = ({name, date, tech, image}) => {
     return(
         <StyledCard>
             <div className="image">
-                <img src={image} alt="project image"/>
+                <img src={image} alt="project screenshot"/>
             </div>
             <div className="description">
                 <h3>{name}</h3>

@@ -17,6 +17,7 @@ const Projects = () => {
 const ProjectList = styled.div`
     display: grid;
     grid-template-columns: auto auto;
+    
 `
 
 export default Projects;
