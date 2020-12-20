@@ -17,7 +17,7 @@ const Intro = () => {
                 Hello and Welcome to my Portfolio Website!
                 <code>&lt;/h1&gt;</code><br /><br />
                 <code>&lt;p&gt;</code>
-                I am Judit Turcsanyi, a self-taught Frontend developer.
+                I am Judit Turcsanyi, a Junior Frontend developer looking for<br />the opportunity that allows me to create awesome websites!
                 <code>&lt;/p&gt;</code><br /><br />
                 <code>&lt;p&gt;</code>
                 Technologies I work with include:

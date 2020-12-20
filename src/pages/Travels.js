@@ -25,6 +25,10 @@ const Travels = () => {
     setImagesource(images[`US-${year}.svg`].default);
   };
   return (
+    <div>
+    <Intro>
+    <h3>Fun fact about me: I love to travel and my ultimate goal is to visit all 50 US states!</h3>
+    </Intro>
     <Travelpage>
       <div className="filter">
         <div className="us-maps">
@@ -58,11 +62,12 @@ const Travels = () => {
         <img src={imagesource} alt="map" />
       </div>
     </Travelpage>
+    </div>
   );
 };
 
 const Travelpage = styled.div`
-  height: 70vh;
+  height: 60vh;
   margin: 0 2rem 0 2rem;
   display: flex;
   justify-content: center;
@@ -97,5 +102,12 @@ const Travelpage = styled.div`
     object-fit: cover;
   }
 `;
+
+const Intro = styled.div`
+padding: 2rem 0 2rem 0;
+display: flex;
+justify-content: center;
+align-items: center;
+`
 
 export default Travels;

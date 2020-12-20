@@ -2,16 +2,20 @@ import React from 'react';
 import styled from 'styled-components'
 
 
-const Project = ({name, date, tech, image}) => {
+const Project = ({project, setSelectedProject}) => {
+    
+    const showDetail = () => {
+        setSelectedProject(project);
+    }
     return(
-        <StyledCard>
+        <StyledCard onClick={showDetail}>
             <div className="image">
-                <img src={image} alt="project screenshot"/>
+                <img src={project.image} alt="project screenshot"/>
             </div>
             <div className="description">
-                <h3>{name}</h3>
-                <p>Created: {date}</p>
-                <p>Technologies: {tech}</p>
+                <h3>{project.name}</h3>
+                <p>Created: {project.date}</p>
+                <p>Technologies: {project.tech}</p>
             </div>
         </StyledCard>
     )

@@ -27,6 +27,9 @@ const StyledNav = styled.div`
         justify-content: space-around;
         li {
             color: white;
+            &:hover {
+              transform: scale(1.1);
+            }
         }
     }
 `

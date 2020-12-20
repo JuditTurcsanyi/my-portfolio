@@ -8,14 +8,15 @@ export const Projectlist = () => {
     return [
         {
             name: "Portfolio Website",
-            tech: "ReactJS (styled-components, react-router-dom, framer-motion)",
+            description: "This is my Portfolio website right here.",
+            tech: "ReactJS, styled-components, react-router-dom, framer-motion",
             date: "December 2020",
             image: `${portfolio}`,
             id: uuidv4()
         },
         {
             name: "Music Player",
-            description: "The project I learned React on. Created based on The Creative React and Redux Course by Dev Ed (https://developedbyed.com/courses/enrolled/1203573) Additional functions added by me: Shuffle, Replay, Dark Mode.",
+            description: "The project I learned React on. Created based on The Creative React and Redux Course by Dev Ed (https://developedbyed.com/courses/enrolled/1203573). Additional functions added by me: Shuffle, Replay, Dark Mode.",
             tech: "ReactJS, Sass",
             date: "November 2020",
             image: `${music}`,
