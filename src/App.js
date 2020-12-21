@@ -3,6 +3,7 @@ import GlobalStyle from "./components/globalStyles";
 import { Switch, Route } from "react-router-dom";
 import Nav from "./components/Nav";
 import Home from "./pages/Home";
+import Footer from "./components/Footer";
 import Projects from "./pages/Projects";
 import Milestones from "./pages/Milestones";
 import Travels from "./pages/Travels";
@@ -26,6 +27,7 @@ function App() {
         <Travels />
       </Route>
       </Switch>
+      <Footer />
     </div>
   );
 }

@@ -10,6 +10,9 @@ const GlobalStyle = createGlobalStyle`
   button {
     font-family: 'Montserrat', sans-serif;
   }
+  option {
+    font-family: 'Montserrat', sans-serif;
+  }
   li {
             list-style: none;
             cursor: pointer;

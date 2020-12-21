@@ -67,7 +67,7 @@ const Travels = () => {
 };
 
 const Travelpage = styled.div`
-  height: 60vh;
+  height: 65vh;
   margin: 0 2rem 0 2rem;
   display: flex;
   justify-content: center;

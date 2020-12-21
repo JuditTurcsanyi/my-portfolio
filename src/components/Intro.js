@@ -20,7 +20,7 @@ const Intro = () => {
                 I am Judit Turcsanyi, a Junior Frontend developer looking for<br />the opportunity that allows me to create awesome websites!
                 <code>&lt;/p&gt;</code><br /><br />
                 <code>&lt;p&gt;</code>
-                Technologies I work with include:
+                Technologies I <span>&#10084;</span> to work with include:
                 <code>&lt;/p&gt;</code><br />
                 <code>&lt;ul&gt;</code><br />
                 <div className="li">
@@ -52,10 +52,13 @@ const StyledIntro = styled.div`
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    height: 90vh;
+    height: 80vh;
     position: relative;
+    span {
+        color: #ff5370;
+    }
     code {
-        color: #ff4e6b
+        color: #ff5370;
         }
     .li {
         position: relative;
