@@ -12,6 +12,8 @@ export const Projectlist = () => {
             tech: "ReactJS, styled-components, react-router-dom, framer-motion, react-select",
             date: "December 2020",
             image: `${portfolio}`,
+            website: "",
+            github: "",
             id: uuidv4()
         },
         {
@@ -20,14 +22,18 @@ export const Projectlist = () => {
             tech: "ReactJS, Sass",
             date: "November 2020",
             image: `${music}`,
+            website: "",
+            github: "",
             id: uuidv4()
         },
         {
             name: "Weather App",
             description: "Detects location data of user, fetches data from API and shows current weather conditions based on location. Toggle option between Celsius and Fahrenheit and changes background image based on current weather conditions.",
-            tech: "OpenWeatherMap API, Vanilla JS, HTML/CSS",
+            tech: "API, Vanilla JS, HTML/CSS",
             date: "October 2020",
             image: `${weather}`,
+            website: "",
+            github: "",
             id: uuidv4()
         },
         {
@@ -36,6 +42,8 @@ export const Projectlist = () => {
             tech: "Vanilla JS, HTML/CSS",
             date: "October 2020",
             image: `${potter}`,
+            website: "",
+            github: "",
             id: uuidv4()
         }
     ]

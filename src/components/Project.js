@@ -39,7 +39,9 @@ cursor: pointer;
             width: inherit;
         }
     }
-    
+&:hover {
+    transform: scale(1.02);
+}    
 `
 
 export default Project;

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import $ from 'jquery';
 //Import all map images
 function importAll(i) {
   let images = {};
@@ -21,9 +22,16 @@ const Travels = () => {
   };
 
   const changeUSMap = (e) => {
-    const year = e.target.innerHTML;
-    setImagesource(images[`US-${year}.svg`].default);
+      const year = e.target.innerHTML;
+      setImagesource(images[`US-${year}.svg`].default);
   };
+
+  //Highlight button
+  $("button").click(function() {
+    $("button").removeClass("active");
+    $(this).addClass("active");
+ });
+
   return (
     <div>
     <Intro>
@@ -89,14 +97,22 @@ const Travelpage = styled.div`
         color: #ff5370;
         font-weight: 700;
     }
-    &:focus{
-        
-        border-radius: 5px;
+    &:focus {
+      border-radius: 5px;
         background: #ff5370;
         color: white;
         outline: none;
     }
   }
+  .active {
+        border-radius: 5px;
+        background: #ff5370;
+        color: white;
+        outline: none;
+        &:hover {
+          color: white;
+        }
+    }
   img {
     width: 50vw;
     object-fit: cover;

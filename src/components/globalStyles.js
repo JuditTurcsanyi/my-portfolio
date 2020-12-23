@@ -4,6 +4,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     background: #F9F9F9;
   }
@@ -23,10 +24,10 @@ const GlobalStyle = createGlobalStyle`
   }
   
   &::-webkit-scrollbar {
-    width: 0.5rem;
+    width: 0.3rem;
   }
   &::-webkit-scrollbar-thumb {
-    background: #afafaf;
+    background:#727272;
     border-radius: 5px;
     
   }
