@@ -16,14 +16,15 @@ const Timeline = () => {
 }
 
 const StyledTimeline = styled.div`
-width: 90%;
+background-color: yellow;
+min-width: 90%;
 display: flex;
-justify-content: center;
-margin-left: 2rem;
+justify-content: center;    
 .timeline-container {
     display: flex;
     flex-direction: column;
     position: relative;
+    width: 100%;
 }
 .timeline-container::after {
     background-color: #ff5370;

@@ -26,6 +26,8 @@ const Milestones = () => {
                 <p>JavaScript Libraries, Frameworks</p>
                 <input type="checkbox" name="react" checked readOnly/>
                 <label htmlFor="react"> ReactJS</label><br/>
+                <input type="checkbox" name="reactn" checked="" readOnly/>
+                <label htmlFor="reactn"> React Native</label><br/>
                 <input type="checkbox" name="angular" checked="" readOnly/>
                 <label htmlFor="angular"> Angular</label><br/>
                 <input type="checkbox" name="gatsby" checked="" readOnly/>
@@ -53,16 +55,29 @@ const Milestones = () => {
 
 const Container = styled.div`
 display: flex;
+@media only screen and (max-width: 1100px) {
+        flex-direction: column;
+    }
 .milestones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+    background: pink;
     h3 {
         text-align: center;
+        margin-bottom: 3rem;
+    }
+    @media only screen and (max-width: 1100px) {
+       width: 100%;
     }
 }
+
 `
 
 const Goals = styled.div`
-width: 60vw;
-padding-left: 5rem;
+background: lightgreen;
+width: 50vw;
 h3 {
     margin-bottom: 0;
 }
@@ -72,6 +87,9 @@ i {
 p {
     font-weight: 700;
 }
+@media only screen and (max-width: 1100px) {
+       width: 100%;
+    }
 `
 
 export default Milestones;

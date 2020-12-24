@@ -5,8 +5,10 @@ const TimelineItem = ({data}) => {
     return (
         <StyledTimelineItem>
             <div className="timeline-item-content">
-                <time>{data.date}</time>
-                <p>{data.text}</p>
+                <div className="text">
+                    <time>{data.date}</time>
+                    <p>{data.text}</p>
+                </div>
                 <span className="circle"></span>
             </div>
         </StyledTimelineItem>
@@ -14,29 +16,45 @@ const TimelineItem = ({data}) => {
 }
 
 const StyledTimelineItem = styled.div`
+    background: lightblue;
     display: flex;
     justify-content: center;
     width: 50%;
     &:nth-child(even) {
         align-self: flex-end;
+        .timeline-item-content {
+            text-align: start;
+            .text {
+            margin-left: 1rem;
+        }
+        }
         .timeline-item-content::after {
             right: auto;
-            left: -5px;
+            left: -2%;
             box-shadow: -1px 1px 1px rgba(0,0,0,0.2);
         }
         .timeline-item-content span {
-            left: -1.1rem;
+            left: -28px;
+            
         }
     }
     .timeline-item-content {
-        width: 90%;
+        font-size: 0.95rem;
+        width: 85%;
         background: #fff;
         border-radius: 5px;
         box-shadow: 0 0 5px rgba(0,0,0,0.3);
         display: flex;
         flex-direction: column;
-        text-align: center;
+        text-align: end;
         position: relative;
+        padding-top: 0.6rem;
+        .text {
+            margin-right: 1rem;
+        }
+        time {
+            font-weight: 700;
+        }
         span {
             background-color: #ff5370;
             width: 10px;
@@ -44,8 +62,8 @@ const StyledTimelineItem = styled.div`
             border-radius: 50%;
             position: absolute;
             top: calc(50% - 5px);
-            right: -1.1rem;
-            z-index: 10;
+            right: -28px;
+            
         }
     }
 
@@ -57,7 +75,7 @@ const StyledTimelineItem = styled.div`
         height: 10px;
         transform: rotate(45deg);
         position: absolute;
-        right:-5px;
+        right:-1.9%;
         top: calc(50% - 5px);
     }
 `

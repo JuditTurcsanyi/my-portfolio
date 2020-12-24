@@ -1,19 +1,19 @@
 const timelineData = [
     {
         text: "Building out my Portfolio Website",
-        date: "December, 2020",
+        date: "December 2020",
     },
     {
         text: "Working with ReactJS",
-        date: "November, 2020",
+        date: "November 2020",
     },
     {
         text: "First applications completed (Quiz App, Weather App)",
-        date: "October, 2020",
+        date: "October 2020",
     },
     {
         text: "HTML/CSS/JavaScript tutorials, Javascript bascic coding challenges",
-        date: "September, 2020",
+        date: "September 2020",
     },
     {
         text: "Wrote my first Hello World in HTML and fell in love with web development",
