@@ -42,11 +42,15 @@ const DetailSection = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
+    @media only screen and (max-width: 1000px) {
+       flex-direction: column;
+    }
 `
 const ButtonSection = styled.div `
     display: flex;
     justify-content: space-around;
     width: 80%;
+    
     button {
         margin: 1rem 0 1rem 0;
         padding: 0.7rem 1rem 0.7rem 1rem;
@@ -58,6 +62,9 @@ const ButtonSection = styled.div `
         background: #ff5370;
         border: none;
         border-radius: 2px;
+        @media only screen and (max-width: 800px) {
+        margin: 0.5rem;
+        }
         icon {
             opacity: 0;
             display: none;
@@ -84,7 +91,21 @@ const StyledDetails = styled.div`
     left: 20%;
     top: 20%;
     z-index: 10;
-    
+    @media only screen and (max-width: 600px) {
+       left: 10%;
+    }
+    @media only screen and (max-width: 1100px) {
+       height: 60vh;
+       overflow: auto;
+       &::-webkit-scrollbar-thumb {
+        background: black;
+        }
+       &::-webkit-scrollbar-track {
+        background: transparent;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        }
+    }
     #exit {
         position: absolute;
         top: 2rem;

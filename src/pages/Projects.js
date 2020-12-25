@@ -71,7 +71,10 @@ const Projects = () => {
 const ProjectList = styled.div`
     display: grid;
     grid-template-columns: auto auto;
-
+    @media only screen and (max-width: 1200px) {
+      display: flex;
+      flex-direction: column;
+    }
 `
 
 const FilterSection = styled.div`

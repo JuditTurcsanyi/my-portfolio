@@ -16,7 +16,6 @@ const TimelineItem = ({data}) => {
 }
 
 const StyledTimelineItem = styled.div`
-    background: lightblue;
     display: flex;
     justify-content: center;
     width: 50%;
@@ -34,8 +33,10 @@ const StyledTimelineItem = styled.div`
             box-shadow: -1px 1px 1px rgba(0,0,0,0.2);
         }
         .timeline-item-content span {
-            left: -28px;
-            
+            left: -27.5px;
+            @media only screen and (max-width: 550px) {
+                left: -24px;
+            } 
         }
     }
     .timeline-item-content {
@@ -62,8 +63,10 @@ const StyledTimelineItem = styled.div`
             border-radius: 50%;
             position: absolute;
             top: calc(50% - 5px);
-            right: -28px;
-            
+            right: -27.5px;
+            @media only screen and (max-width: 550px) {
+                right: -24px;
+            } 
         }
     }
 

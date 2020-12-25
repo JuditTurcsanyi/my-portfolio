@@ -29,6 +29,10 @@ border-radius: 1rem;
 overflow: hidden;
 margin: 3rem;
 padding: 2rem;
+@media only screen and (max-width: 800px) {
+       flex-direction: column;
+       align-items: center;
+    }
 cursor: pointer;
     .description {
         padding: 1.5rem;

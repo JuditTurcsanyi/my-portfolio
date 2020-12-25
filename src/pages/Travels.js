@@ -33,7 +33,7 @@ const Travels = () => {
  });
 
   return (
-    <div>
+    <Container>
     <Intro>
     <h3>Fun fact about me: I love to travel and my ultimate goal is to visit all 50 US states!</h3>
     </Intro>
@@ -54,6 +54,7 @@ const Travels = () => {
             <button onClick={changeMap}>All Countries</button>
             <button onClick={changeMap}>2007</button>
             <button onClick={changeMap}>2008</button>
+            <button onClick={changeMap}>2009</button>
             <button onClick={changeMap}>2011</button>
             <button onClick={changeMap}>2012</button>
             <button onClick={changeMap}>2013</button>
@@ -70,9 +71,17 @@ const Travels = () => {
         <img src={imagesource} alt="map" />
       </div>
     </Travelpage>
-    </div>
+    </Container>
   );
 };
+
+
+const Container = styled.div`
+@media only screen and (max-width: 1200px) {
+      display: flex;
+      flex-direction: column;
+    }
+`
 
 const Travelpage = styled.div`
   height: 65vh;
@@ -80,7 +89,11 @@ const Travelpage = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-
+  @media only screen and (max-width: 1200px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
 .filter {
     display: flex;
     flex-direction: column;
@@ -116,6 +129,9 @@ const Travelpage = styled.div`
   img {
     width: 50vw;
     object-fit: cover;
+    @media only screen and (max-width: 1200px) {
+      width: 90%;
+    }
   }
 `;
 
@@ -124,6 +140,9 @@ padding: 2rem 0 2rem 0;
 display: flex;
 justify-content: center;
 align-items: center;
+@media only screen and (max-width: 1200px) {
+      padding-left: 1rem;
+    }
 `
 
 export default Travels;
