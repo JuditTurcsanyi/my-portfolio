@@ -4,6 +4,8 @@ import Select from 'react-select';
 import Projectlist from '../projectdata';
 import Project from '../components/Project';
 import ProjectDetail from '../components/ProjectDetail';
+import { motion, AnimatePresence, AnimateSharedLayout } from "framer-motion";
+import {projectAnimation} from '../animations';
 
 const Projects = () => {
     let [projects, setProjects] = useState(Projectlist());
@@ -54,21 +56,25 @@ const Projects = () => {
     }
 
     return(
-        <div>
+        <motion.div>
             <FilterSection>
                 <Select options={options} className="select" onChange={filterProjects} onClick={AddTechnologies()} id="filter" name="filter"/>
             </FilterSection>
-            <ProjectList >
-                {selectedProject && <ProjectDetail selectedProject={selectedProject} setSelectedProject={setSelectedProject} />}
-                {projects.map((project) => (
-                    <Project setSelectedProject={setSelectedProject} project={project} name={project.name} date={project.date} tech={project.tech} image={project.image} description={project.description} key={project.id} />
-                ) )}
+            <ProjectList variants={projectAnimation} initial="hidden" animate="show">
+                <AnimateSharedLayout>
+                    {projects.map((project) => (
+                        <Project setSelectedProject={setSelectedProject} project={project} name={project.name} date={project.date} tech={project.tech} image={project.image} description={project.description} key={project.id} />
+                    ) )}
+                        <AnimatePresence>
+                        {selectedProject && <ProjectDetail selectedProject={selectedProject} setSelectedProject={setSelectedProject} />}
+                        </AnimatePresence>
+                </AnimateSharedLayout>  
             </ProjectList>
-        </div>
+        </motion.div>
     )
 }
 
-const ProjectList = styled.div`
+const ProjectList = styled(motion.div)`
     display: grid;
     grid-template-columns: auto auto;
     @media only screen and (max-width: 1200px) {

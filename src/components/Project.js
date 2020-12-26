@@ -1,6 +1,6 @@
 import React from 'react';
-import styled from 'styled-components'
-
+import styled from 'styled-components';
+import { motion } from "framer-motion";
 
 const Project = ({project, setSelectedProject}) => {
     
@@ -8,7 +8,7 @@ const Project = ({project, setSelectedProject}) => {
         setSelectedProject(project);
     }
     return(
-        <StyledCard onClick={showDetail}>
+        <StyledCard layoutId={project.id} onClick={showDetail}>
             <div className="image">
                 <img src={project.image} alt="project screenshot"/>
             </div>
@@ -21,7 +21,7 @@ const Project = ({project, setSelectedProject}) => {
     )
 }
 
-const StyledCard = styled.div`
+const StyledCard = styled(motion.div)`
 display: flex;
 justify-content: space-around;
 box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);

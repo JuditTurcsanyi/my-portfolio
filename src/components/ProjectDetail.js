@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
+import { motion } from "framer-motion";
 
 const ProjectDetail = ({selectedProject, setSelectedProject}) => {
     const exitProject = () => {
@@ -7,7 +8,7 @@ const ProjectDetail = ({selectedProject, setSelectedProject}) => {
     }
     return (
         <Shadow>
-        <StyledDetails>
+        <StyledDetails layoutId={selectedProject.id}>
             <button id="exit" onClick={exitProject}>X</button>
             <DetailSection>
                 <div className="image">
@@ -21,15 +22,18 @@ const ProjectDetail = ({selectedProject, setSelectedProject}) => {
                 </div>
             </DetailSection>
             <ButtonSection>
-                <button><span>Go to Project</span><icon>&#187;</icon></button>
-                <button><span>Go to Code</span><icon>&#187;</icon></button>
+                <button><span>Go to Project</span><i>&#187;</i></button>
+                <button><span>Go to Code</span><i>&#187;</i></button>
             </ButtonSection>
         </StyledDetails>
         </Shadow>
     )
 }
 
-const Shadow = styled.div`
+const Shadow = styled(motion.div)`
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     min-height: 100vh;
     background: rgba(0, 0, 0, 0.5);
@@ -65,7 +69,7 @@ const ButtonSection = styled.div `
         @media only screen and (max-width: 800px) {
         margin: 0.5rem;
         }
-        icon {
+        i {
             opacity: 0;
             display: none;
         }
@@ -73,7 +77,7 @@ const ButtonSection = styled.div `
             span{
                 left: -3rem;
             }
-            icon {
+            i {
                 opacity: 1;
                 display: inline-block;
                 padding-left: 0.3rem;
@@ -82,18 +86,13 @@ const ButtonSection = styled.div `
     }
 `
 
-const StyledDetails = styled.div`
+const StyledDetails = styled(motion.div)`
     width: 50%;
     border-radius: 1rem;
     padding: 2rem 5rem;
     background: white;
     position: absolute;
-    left: 20%;
-    top: 20%;
     z-index: 10;
-    @media only screen and (max-width: 600px) {
-       left: 10%;
-    }
     @media only screen and (max-width: 1100px) {
        height: 60vh;
        overflow: auto;

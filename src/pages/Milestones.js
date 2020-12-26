@@ -1,15 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
 import Timeline from '../components/Timeline';
+import {motion} from 'framer-motion';
+import {componentsAnimation, component} from '../animations'
 
 const Milestones = () => {
     return(
-        <Container>
-            <div className="milestones">
+        <Container variants={componentsAnimation} initial="hidden" animate="show" exit="exit">
+            <motion.div variants={component} className="milestones">
                 <h3>My Road to Become a Frontend Developer</h3>
                 <Timeline />
-            </div>
-            <Goals>
+            </motion.div>
+            <Goals variants={component}>
                 <div className="text">
                     <h3>These are my current skills and biggest targets for the near future*:</h3>
                     <i>*Subject to change may an amazing opportunity arise ;)</i>
@@ -55,7 +57,7 @@ const Milestones = () => {
     )
 }
 
-const Container = styled.div`
+const Container = styled(motion.div)`
 display: flex;
 @media only screen and (max-width: 1200px) {
         flex-direction: column;
@@ -77,7 +79,7 @@ display: flex;
 
 `
 
-const Goals = styled.div`
+const Goals = styled(motion.div)`
 width: 50vw;
 padding-bottom: 1rem;
 h3 {

@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import {motion} from 'framer-motion';
+
 
 const Intro = () => {
     return (
@@ -47,7 +49,7 @@ const Intro = () => {
     )
 }
 
-const StyledIntro = styled.div`
+const StyledIntro = styled(motion.div)`
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -70,7 +72,7 @@ const StyledIntro = styled.div`
         justify-content: space-around;
         .github {
             &:hover{
-                color: black;
+                color: #24292E;
                 transform: scale(1.1);
                 cursor: pointer;
             }

@@ -1,13 +1,15 @@
 import React from 'react';
 //Components
 import Intro from '../components/Intro';
+import {motion} from 'framer-motion';
+import {pageAnimation} from '../animations'
 
 
 function Home() {
     return (
-      <div className="home">
+      <motion.div variants={pageAnimation} initial="hidden" animate="show" exit="exit" className="home">
         <Intro />
-      </div>
+      </motion.div>
     );
   }
   

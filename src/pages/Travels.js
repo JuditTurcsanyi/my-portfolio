@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import $ from 'jquery';
+import {motion, AnimatePresence} from 'framer-motion';
+import {imgAnimation, pageAnimation} from '../animations'
 //Import all map images
 function importAll(i) {
   let images = {};
@@ -13,7 +15,6 @@ const images = importAll(require.context("../map-images", false, /\.(svg)$/));
 
 const Travels = () => {
   const [imagesource, setImagesource] = useState(images["All Countries.svg"].default);
-  
   const changeMap = (e) => {
     // console.log(images);
     const year = e.target.innerHTML;
@@ -33,7 +34,7 @@ const Travels = () => {
  });
 
   return (
-    <Container>
+    <Container variants={pageAnimation} initial="hidden" animate="show">
     <Intro>
     <h3>Fun fact about me: I love to travel and my ultimate goal is to visit all 50 US states!</h3>
     </Intro>
@@ -68,7 +69,9 @@ const Travels = () => {
         </div>
       </div>
       <div className="maps">
-        <img src={imagesource} alt="map" />
+      <AnimatePresence exitBeforeEnter>
+        <motion.img variants={imgAnimation} initial="hidden" animate="show" exit="exit" src={imagesource} key={imagesource} alt="map" />
+      </AnimatePresence>
       </div>
     </Travelpage>
     </Container>
@@ -76,7 +79,7 @@ const Travels = () => {
 };
 
 
-const Container = styled.div`
+const Container = styled(motion.div)`
 @media only screen and (max-width: 1200px) {
       display: flex;
       flex-direction: column;
