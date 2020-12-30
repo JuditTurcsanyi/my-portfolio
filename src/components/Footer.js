@@ -20,6 +20,7 @@ const FooterSection = styled.footer`
     font-size: 12px;
     position: relative;
     bottom: 0;
+    margin-top: 2rem;
     hr {
         color: grey;
         width: 80vw;

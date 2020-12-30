@@ -9,11 +9,11 @@ export const Projectlist = () => {
         {
             name: "Portfolio Website",
             description: "This is my Portfolio Website right here. :) Challenges I learned from while creating this website: import all images from a folder with a function rather than individually and filtering for projects.",
-            tech: "ReactJS, styled-components, react-router-dom, framer-motion, react-select",
+            tech: "ReactJS, styled-components, react-router-dom, framer-motion, react-select, Responsive Design",
             date: "December 2020",
             image: `${portfolio}`,
             website: "",
-            github: "",
+            github: "https://github.com/JuditTurcsanyi/my-portfolio",
             id: uuidv4()
         },
         {
@@ -22,8 +22,8 @@ export const Projectlist = () => {
             tech: "ReactJS, Sass",
             date: "November 2020",
             image: `${music}`,
-            website: "",
-            github: "",
+            website: "https://juditturcsanyi.github.io/react-music-player/",
+            github: "https://github.com/JuditTurcsanyi/react-music-player",
             id: uuidv4()
         },
         {
@@ -32,8 +32,8 @@ export const Projectlist = () => {
             tech: "API, Vanilla JS, HTML/CSS",
             date: "October 2020",
             image: `${weather}`,
-            website: "",
-            github: "",
+            website: "https://juditturcsanyi.github.io/weather-app/",
+            github: "https://github.com/JuditTurcsanyi/weather-app",
             id: uuidv4()
         },
         {
@@ -42,8 +42,8 @@ export const Projectlist = () => {
             tech: "Vanilla JS, HTML/CSS",
             date: "October 2020",
             image: `${potter}`,
-            website: "",
-            github: "",
+            website: "https://juditturcsanyi.github.io/Harry-Potter-Quiz/",
+            github: "https://github.com/JuditTurcsanyi/Harry-Potter-Quiz",
             id: uuidv4()
         }
     ]

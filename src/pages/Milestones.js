@@ -26,18 +26,22 @@ const Milestones = () => {
                     <label htmlFor="js"> JavaScript</label><br/>
                     <input type="checkbox" name="api" checked readOnly/>
                     <label htmlFor="api"> APIs</label><br/>
+                    <input type="checkbox" name="harvard" checked="" readOnly/>
+                    <label htmlFor="harvard"> Harvard CS50</label><br/>
                     <p>JavaScript Libraries, Frameworks</p>
                     <input type="checkbox" name="react" checked readOnly/>
                     <label htmlFor="react"> ReactJS</label><br/>
                     <input type="checkbox" name="reactn" checked="" readOnly/>
                     <label htmlFor="reactn"> React Native</label><br/>
+                    <input type="checkbox" name="redux" checked="" readOnly/>
+                    <label htmlFor="redux"> Redux</label><br/>
                     <input type="checkbox" name="angular" checked="" readOnly/>
                     <label htmlFor="angular"> Angular</label><br/>
                     <input type="checkbox" name="gatsby" checked="" readOnly/>
                     <label htmlFor="gatsby"> Gatsby</label><br/>
                     <input type="checkbox" name="gulp" checked="" readOnly/>
                     <label htmlFor="gulp"> Gulp</label><br/>
-                    <p>Version Control System</p>
+                    <p>Version Control</p>
                     <input type="checkbox" name="git" checked readOnly/>
                     <label htmlFor="git"> Git/GitHub</label><br/>
                     <p>Test Framework</p>

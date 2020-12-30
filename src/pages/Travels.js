@@ -87,8 +87,8 @@ const Container = styled(motion.div)`
 `
 
 const Travelpage = styled.div`
-  height: 65vh;
-  margin: 0 2rem 0 2rem;
+  height: 55vh;
+  margin: 0 2rem;
   display: flex;
   justify-content: center;
   align-items: center;

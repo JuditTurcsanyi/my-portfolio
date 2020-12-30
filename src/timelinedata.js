@@ -12,7 +12,7 @@ const timelineData = [
         date: "October 2020",
     },
     {
-        text: "HTML/CSS/JavaScript tutorials, Javascript basic coding challenges",
+        text: "HTML/CSS/JavaScript tutorials, Javascript coding exercises on w3resource.com",
         date: "September 2020",
     },
     {
