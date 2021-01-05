@@ -1,10 +1,14 @@
 const timelineData = [
     {
+        text: "Plan for January: Create an app with Redux, Start the Harvard CS50 course",
+        date: "January 2021",
+    },
+    {
         text: "Building out my Portfolio Website",
         date: "December 2020",
     },
     {
-        text: "Working with ReactJS",
+        text: "Working with ReactJS, completion of The Creative React and Redux Course by Dev Ed",
         date: "November 2020",
     },
     {

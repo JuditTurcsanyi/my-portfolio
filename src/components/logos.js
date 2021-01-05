@@ -16,6 +16,7 @@ import logo from './styled-components.png';
 
 const Logos = () => {
     return (
+        <Container>
         <Banner>
             <LogoSection1>
                 <Icon class="icon" icon={html5} width="50" height="50" />
@@ -45,7 +46,7 @@ const Logos = () => {
                 <Icon class="icon" icon={gitIcon} width="50" height="50" />
                 <Icon class="icon" icon={githubIcon} width="50" height="50" />
             </LogoSection2>
-            <LogoSection3>
+            {/* <LogoSection3>
                 <Icon class="icon" icon={html5} width="50" height="50" />
                 <Icon class="icon" icon={css3} width="50" height="50" />
                 <Icon class="icon" icon={sassIcon} width="50" height="50" />
@@ -58,17 +59,25 @@ const Logos = () => {
                 <Icon class="icon" icon={fileTypeVscode} width="50" height="50" />
                 <Icon class="icon" icon={gitIcon} width="50" height="50" />
                 <Icon class="icon" icon={githubIcon} width="50" height="50" />
-            </LogoSection3>
+            </LogoSection3> */}
         </Banner>
+        </Container>
     )
 }
 
-
-const Banner = styled.div`
+const Container = styled.div`
 width: 100%;
 height: 55px;
-overflow: hidden;
 display: flex;
+justify-content: center;
+`
+
+const Banner = styled.div`
+width: 1000px;
+height: 55px;
+display: flex;
+justify-content: flex-start;
+overflow: hidden;
 `
 
 const logoanimation = keyframes`
@@ -76,43 +85,35 @@ const logoanimation = keyframes`
         transform: translateX(0%);
     };
     100% {
-        transform: translateX(-200%);
+        transform: translateX(-100%);
     };
 `
 
 
+
 const LogoSection1 = styled.div`
+height: 55px;
 display: flex;
 justify-content: space-around;
-animation: ${logoanimation} 15s infinite;
+width: 1000px;
+animation: ${logoanimation} 10s infinite;
 animation-timing-function: linear;
 .icon {
-    margin: 0 2rem;
+    margin: 0 1.1rem;
 }
 `
 
 const LogoSection2 = styled.div`
-left: 100%;
+height: 55px;
 display: flex;
-width: 100vw;
+width: 1000px;
 justify-content: space-around;
-animation: ${logoanimation} 15s infinite;
+animation: ${logoanimation} 10s infinite;
 animation-timing-function: linear;
 .icon {
-    margin: 0 2rem;
+    margin: 0 1.1rem;
 }
 `
 
-const LogoSection3 = styled.div`
-left: 200%;
-display: flex;
-justify-content: space-around;
-width: 100vw;
-animation: ${logoanimation} 15s infinite;
-animation-timing-function: linear;
-.icon {
-    margin: 0 2rem;
-}
-`
 
 export default Logos;

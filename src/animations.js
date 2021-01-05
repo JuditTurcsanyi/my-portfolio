@@ -70,4 +70,30 @@ export const component = {
     }
 }
 
-  
+export const introAnimation = {
+    hidden: {
+        opacity: 0,
+    },
+    show: {
+        opacity: 1,
+        transition: {
+            staggerChildren: 0.25,
+        },
+    },
+    exit: {
+        opacity: 0.75,
+        transition: {duration:0.75},
+    }
+}
+
+export const item = {
+    hidden: {
+        opacity: 0,
+    },
+    show: {
+        opacity: 1,
+        transition: {
+            duration:1,
+        }
+    }
+  }  

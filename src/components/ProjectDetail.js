@@ -22,8 +22,8 @@ const ProjectDetail = ({selectedProject, setSelectedProject}) => {
                 </div>
             </DetailSection>
             <ButtonSection>
-                <button><span>Go to Project</span><i>&#187;</i></button>
-                <button><span>Go to Code</span><i>&#187;</i></button>
+                <button onClick={()=> window.open(`${selectedProject.website}`, "_blank")}><span>Go to Project</span><i>&#187;</i></button>
+                <button onClick={()=> window.open(`${selectedProject.github}`, "_blank")}><span>Go to Code</span><i>&#187;</i></button>
             </ButtonSection>
         </StyledDetails>
         </Shadow>
