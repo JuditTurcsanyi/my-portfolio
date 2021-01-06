@@ -8,7 +8,7 @@ export const Projectlist = () => {
     return [
         {
             name: "Portfolio Website",
-            description: "This is my Portfolio Website right here. :) Challenges I learned from while creating this website: import all images from a folder with a function rather than individually and filtering for projects.",
+            description: "This is my Portfolio Website right here. :)",
             tech: "ReactJS, styled-components, react-router-dom, framer-motion, react-select, Responsive Design",
             date: "December 2020",
             image: `${portfolio}`,
