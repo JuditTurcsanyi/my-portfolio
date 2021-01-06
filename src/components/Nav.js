@@ -10,9 +10,9 @@ function Nav() {
         
         <ul>
             <li><Link to="/my-portfolio" ><FontAwesomeIcon icon={faFemale} /> About Me</Link></li>
-            <li><Link to="/projects" ><FontAwesomeIcon icon={faCode} /> Projects</Link></li>
-            <li><Link to="/milestones" ><FontAwesomeIcon icon={faTrophy} /> Milestones & Goals</Link></li>
-            <li><Link to="/travels" ><FontAwesomeIcon icon={faGlobeAmericas} /> Travels</Link></li>
+            <li><Link to="/my-portfolio/projects" ><FontAwesomeIcon icon={faCode} /> Projects</Link></li>
+            <li><Link to="/my-portfolio/milestones" ><FontAwesomeIcon icon={faTrophy} /> Milestones & Goals</Link></li>
+            <li><Link to="/my-portfolio/travels" ><FontAwesomeIcon icon={faGlobeAmericas} /> Travels</Link></li>
         </ul>
         
       </StyledNav>
