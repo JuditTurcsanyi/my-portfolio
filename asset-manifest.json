@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/my-portfolio/static/js/main.bb4042d3.chunk.js",
-    "main.js.map": "/my-portfolio/static/js/main.bb4042d3.chunk.js.map",
+    "main.js": "/my-portfolio/static/js/main.092456e0.chunk.js",
+    "main.js.map": "/my-portfolio/static/js/main.092456e0.chunk.js.map",
     "runtime-main.js": "/my-portfolio/static/js/runtime-main.8e664069.js",
     "runtime-main.js.map": "/my-portfolio/static/js/runtime-main.8e664069.js.map",
     "static/js/2.013f23ab.chunk.js": "/my-portfolio/static/js/2.013f23ab.chunk.js",
@@ -32,13 +32,13 @@
     "static/media/US-2018.svg": "/my-portfolio/static/media/US-2018.73b1247e.svg",
     "static/media/US-2019.svg": "/my-portfolio/static/media/US-2019.c49edfc9.svg",
     "static/media/music.17517c60.PNG": "/my-portfolio/static/media/music.17517c60.PNG",
-    "static/media/portfolio.3a588603.PNG": "/my-portfolio/static/media/portfolio.3a588603.PNG",
+    "static/media/portfolio.fc4fc4e2.PNG": "/my-portfolio/static/media/portfolio.fc4fc4e2.PNG",
     "static/media/potter.ecba5f68.PNG": "/my-portfolio/static/media/potter.ecba5f68.PNG",
     "static/media/weather.707b214f.PNG": "/my-portfolio/static/media/weather.707b214f.PNG"
   },
   "entrypoints": [
     "static/js/runtime-main.8e664069.js",
     "static/js/2.013f23ab.chunk.js",
-    "static/js/main.bb4042d3.chunk.js"
+    "static/js/main.092456e0.chunk.js"
   ]
 }
