@@ -33,7 +33,7 @@ const Milestones = () => {
                     <label htmlFor="react"> ReactJS</label><br/>
                     <input type="checkbox" name="reactn" checked="" readOnly/>
                     <label htmlFor="reactn"> React Native</label><br/>
-                    <input type="checkbox" name="redux" checked="" readOnly/>
+                    <input type="checkbox" name="redux" checked readOnly/>
                     <label htmlFor="redux"> Redux</label><br/>
                     <input type="checkbox" name="angular" checked="" readOnly/>
                     <label htmlFor="angular"> Angular</label><br/>
@@ -46,7 +46,7 @@ const Milestones = () => {
                     <label htmlFor="git"> Git/GitHub</label><br/>
                     <p>Test Framework</p>
                     <input type="checkbox" name="mocha" checked="" readOnly/>
-                    <label htmlFor="mocha"> Mocha</label><br/>
+                    <label htmlFor="mocha"> Mocha/Chai</label><br/>
                     <p>Database Programs</p>
                     <input type="checkbox" name="sql" checked="" readOnly/>
                     <label htmlFor="sql"> SQL</label><br/>

@@ -1,6 +1,10 @@
 const timelineData = [
     {
-        text: "Plan for January: Create an app with Redux, Start the Harvard CS50 course",
+        text: "Plan for February: Finish a Redux project, continue with the Harvard CS50x course",
+        date: "February 2021",
+    },
+    {
+        text: "Completed the JavaScript30 course (One fun JavaScript project for each day)",
         date: "January 2021",
     },
     {
