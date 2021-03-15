@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/my-portfolio/static/js/main.34b12394.chunk.js",
-    "main.js.map": "/my-portfolio/static/js/main.34b12394.chunk.js.map",
+    "main.js": "/my-portfolio/static/js/main.60eade1e.chunk.js",
+    "main.js.map": "/my-portfolio/static/js/main.60eade1e.chunk.js.map",
     "runtime-main.js": "/my-portfolio/static/js/runtime-main.8e664069.js",
     "runtime-main.js.map": "/my-portfolio/static/js/runtime-main.8e664069.js.map",
     "static/js/2.5601cce9.chunk.js": "/my-portfolio/static/js/2.5601cce9.chunk.js",
@@ -31,6 +31,7 @@
     "static/media/US-2017.svg": "/my-portfolio/static/media/US-2017.9f5f0560.svg",
     "static/media/US-2018.svg": "/my-portfolio/static/media/US-2018.73b1247e.svg",
     "static/media/US-2019.svg": "/my-portfolio/static/media/US-2019.c49edfc9.svg",
+    "static/media/coffeeshop.f4354f1d.PNG": "/my-portfolio/static/media/coffeeshop.f4354f1d.PNG",
     "static/media/music.17517c60.PNG": "/my-portfolio/static/media/music.17517c60.PNG",
     "static/media/portfolio.fc4fc4e2.PNG": "/my-portfolio/static/media/portfolio.fc4fc4e2.PNG",
     "static/media/potter.ecba5f68.PNG": "/my-portfolio/static/media/potter.ecba5f68.PNG",
@@ -39,6 +40,6 @@
   "entrypoints": [
     "static/js/runtime-main.8e664069.js",
     "static/js/2.5601cce9.chunk.js",
-    "static/js/main.34b12394.chunk.js"
+    "static/js/main.60eade1e.chunk.js"
   ]
 }
