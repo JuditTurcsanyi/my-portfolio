@@ -3,9 +3,20 @@ import portfolio from './portfolio-images/portfolio.PNG';
 import music from './portfolio-images/music.PNG';
 import potter from './portfolio-images/potter.PNG';
 import weather from './portfolio-images/weather.PNG';
+import coffeeshop from './portfolio-images/coffeeshop.PNG';
 
 export const Projectlist = () => {
     return [
+        {
+            name: "Good Coffee website",
+            description: "Website for a local coffee shop",
+            tech: "ReactJS, styled-components, react-router-dom, framer-motion, react-intersection-observer, Google Maps API, Responsive Design",
+            date: "March 2020",
+            image: `${coffeeshop}`,
+            website: "https://goodcoffee.netlify.app/",
+            github: "https://github.com/JuditTurcsanyi/Good-Coffee-website",
+            id: uuidv4()
+        },
         {
             name: "Portfolio Website",
             description: "This is my Portfolio Website right here. :)",
