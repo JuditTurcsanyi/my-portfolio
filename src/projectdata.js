@@ -23,7 +23,7 @@ export const Projectlist = () => {
             tech: "ReactJS, styled-components, react-router-dom, framer-motion, react-select, Responsive Design",
             date: "December 2020",
             image: `${portfolio}`,
-            website: "https://juditturcsanyi.github.io/my-portfolio/",
+            website: "https://juditturcsanyi.netlify.app/",
             github: "https://github.com/JuditTurcsanyi/my-portfolio",
             id: uuidv4()
         },
