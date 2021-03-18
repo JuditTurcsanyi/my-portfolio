@@ -30,8 +30,12 @@ const StyledNav = styled.div`
             &:hover {
               transform: scale(1.1);
             }
+        @media (max-width: 400px) {
+          font-size: 12px;
+        }
         }
     }
+    
 `
 
   export default Nav;

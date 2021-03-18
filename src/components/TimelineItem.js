@@ -36,6 +36,9 @@ const StyledTimelineItem = styled.div`
             left: -27.5px;
             @media only screen and (max-width: 550px) {
                 left: -24px;
+            }
+            @media (max-width: 400px) {
+                left: -19px;
             } 
         }
     }
@@ -66,7 +69,10 @@ const StyledTimelineItem = styled.div`
             right: -27.5px;
             @media only screen and (max-width: 550px) {
                 right: -24px;
-            } 
+            }
+            @media (max-width: 400px) {
+                right: -19px;
+            }
         }
     }
 

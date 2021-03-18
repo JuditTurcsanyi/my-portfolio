@@ -21,7 +21,7 @@ display: flex;
 justify-content: center;
 @media only screen and (max-width: 550px) {
        width: 100vw;
-    } 
+    }
 .timeline-container {
     display: flex;
     flex-direction: column;
