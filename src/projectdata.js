@@ -4,9 +4,20 @@ import music from './portfolio-images/music.PNG';
 import potter from './portfolio-images/potter.PNG';
 import weather from './portfolio-images/weather.PNG';
 import coffeeshop from './portfolio-images/coffeeshop.PNG';
+import game from './portfolio-images/game.PNG';
 
 export const Projectlist = () => {
     return [
+        {
+            name: "Recruiters' Game",
+            description: "Even if you are not considering hiring me, have some fun for a minute! :)",
+            tech: "Vanilla JS, HTML/CSS",
+            date: "April 2020",
+            image: `${game}`,
+            website: "https://recruitersgame.netlify.app/",
+            github: "https://github.com/JuditTurcsanyi/Recruiters-Game",
+            id: uuidv4()
+        },
         {
             name: "Good Coffee website",
             description: "Website for a local coffee shop",

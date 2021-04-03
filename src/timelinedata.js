@@ -1,7 +1,7 @@
 const timelineData = [
     {
-        text: "Add new projects to my portfolio, continue with the Harvard CS50x course",
-        date: "Plan for March 2021",
+        text: "Added a new project to my portfolio, studying for the ISTQB exam",
+        date: "March 2021",
     },{
         text: "Working on the Harvard CS50x course",
         date: "February 2021",
